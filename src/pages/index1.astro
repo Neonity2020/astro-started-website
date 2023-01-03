@@ -3,7 +3,6 @@ import Demo from "../components/demo.astro";
 const name = "Astro";
 const post = await fetch("http://jsonplaceholder.typicode.com/posts?_limit=5");
 const data = await post.json();
-console.log(data);
 ---
 
 <html lang="en">
