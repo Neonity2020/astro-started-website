@@ -1,0 +1,33 @@
+---
+import Demo from "../components/demo.astro";
+const name = "Astro";
+const post = await fetch("http://jsonplaceholder.typicode.com/posts?_limit=5");
+const data = await post.json();
+console.log(data);
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <h1>hello {name}</h1>
+
+    {data.map(({ title }) => <p>{title}</p>)}
+    <hr />
+    <Demo name="李四" age="19" />
+    <button id="alertBtn">点击弹窗</button>
+    <script>
+      (function () {
+        const $alertBtn = document.getElementById("alertBtn");
+        $alertBtn?.addEventListener("click", function () {
+          alert("hello word!");
+        });
+      })();
+    </script>
+  </body>
+</html>

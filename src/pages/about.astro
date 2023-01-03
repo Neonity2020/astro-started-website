@@ -1,0 +1,353 @@
+---
+import BasicLayout from "../layouts/BasicLayout.astro";
+---
+
+<BasicLayout
+  title="关于"
+  mainContent={{
+    mainTitle: "为什么是 Astro?",
+    mainDesption:
+      "Astro 是集多功能于一体的Web框架，用于构建快速、以内容为中心的网站。",
+    isNarrow: true,
+  }}
+>
+  <article id="article" class="max-w-screen-md px-4 py-12 sm:py-24 mx-auto">
+    <section class="main-section astro-KDXQRJXI">
+      <p>
+        为什么选择 Astro
+        而不是其他的Web框架？以下的五个核心设计原则有助于解释我们为什么要构建
+        Astro，它需要解决的问题以及为什么 Astro 可能是您的项目或团队的最佳选择。
+      </p>
+      <div tabIndex="-1" class="heading-wrapper level-h4">
+        <h4 id="astro是">Astro是…</h4><a class="anchor-link" href="#astro是"
+          ><span aria-hidden="true" class="anchor-icon"
+            ><svg
+              width="16"
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xlmns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                fill="currentcolor"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+              >
+              </path>
+            </svg></span
+          ><span is:raw="true" class="sr-only">Section titled Astro是…</span></a
+        >
+      </div>
+      <ol>
+        <li>
+          <a href="#%E4%BB%A5%E5%86%85%E5%AE%B9%E4%B8%BA%E4%B8%AD%E5%BF%83">
+            <strong>以内容为中心</strong>
+          </a>：Astro 专为内容丰富的网站而设计。
+        </li>
+        <li>
+          <a href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%98%E5%85%88">
+            <strong>服务器优先</strong>
+          </a>：网站在服务器上渲染 HTML 时运行速度更快。
+        </li>
+        <li>
+          <a href="#%E9%BB%98%E8%AE%A4%E5%BF%AB%E9%80%9F">
+            <strong>默认快速</strong>
+          </a>：在 Astro 中构建缓慢的网站是不可能的。
+        </li>
+        <li>
+          <a href="#%E6%98%93%E4%BA%8E%E4%BD%BF%E7%94%A8">
+            <strong>易于使用</strong>
+          </a>：您不需要成为专家即可使用 Astro 构建某些内容。
+        </li>
+        <li>
+          <a
+            href="#%E5%8A%9F%E8%83%BD%E9%BD%90%E5%85%A8%E4%B8%94%E7%81%B5%E6%B4%BB"
+          >
+            <strong>功能齐全且灵活</strong>
+          </a>：超100多种 Astro 集成可供选择。
+        </li>
+      </ol>
+      <div tabIndex="-1" class="heading-wrapper level-h2">
+        <h2 id="以内容为中心">以内容为中心</h2><a
+          class="anchor-link"
+          href="#以内容为中心"
+          ><span aria-hidden="true" class="anchor-icon"
+            ><svg
+              width="16"
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xlmns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                fill="currentcolor"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+              >
+              </path>
+            </svg></span
+          ><span is:raw="true" class="sr-only">Section titled 以内容为中心</span
+          ></a
+        >
+      </div>
+      <p>
+        <strong>Astro 皆为构建内容丰富的网站。</strong> 这包括大多数营销网站、出版网站、文档网站、博客、个人作品集和一些电子商务网站。
+      </p>
+      <p>
+        相比之下，大多数现代 Web框架 都是为构建 Web应用程序
+        而设计的，这些框架最适合构建更复杂、类似应用程序的体验；管理仪表板、收件箱、社交网络、待办事项列表，甚至是像
+        <a href="https://figma.com">Figma</a> 和 <a href="https://ping.gg/"
+          >Ping</a
+        > 这样的本地应用程序。
+      </p>
+      <aside class="content tip astro-IWAHHG4Z" aria-label="提示">
+        <p class="title astro-IWAHHG4Z" aria-hidden="true">
+          <span class="icon astro-IWAHHG4Z">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 18 18"
+              width="16"
+              height="16"
+              class="astro-IWAHHG4Z"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14 0a8.8 8.8 0 0 0-6 2.6l-.5.4-.9 1H3.3a1.8 1.8 0 0 0-1.5.8L.1 7.6a.8.8 0 0 0 .4 1.1l3.1 1 .2.1 2.4 2.4.1.2 1 3a.8.8 0 0 0 1 .5l2.9-1.7a1.8 1.8 0 0 0 .8-1.5V9.5l1-1 .4-.4A8.8 8.8 0 0 0 16 2v-.1A1.8 1.8 0 0 0 14.2 0h-.1zm-3.5 10.6-.3.2L8 12.3l.5 1.8 2-1.2a.3.3 0 0 0 .1-.2v-2zM3.7 8.1l1.5-2.3.2-.3h-2a.3.3 0 0 0-.3.1l-1.2 2 1.8.5zm5.2-4.5a7.3 7.3 0 0 1 5.2-2.1h.1a.3.3 0 0 1 .3.3v.1a7.3 7.3 0 0 1-2.1 5.2l-.5.4a15.2 15.2 0 0 1-2.5 2L7.1 11 5 9l1.5-2.3a15.3 15.3 0 0 1 2-2.5l.4-.5zM12 5a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-8.4 9.6a1.5 1.5 0 1 0-2.2-2.2 7 7 0 0 0-1.1 3 .2.2 0 0 0 .3.3c.6 0 2.2-.4 3-1.1z"
+                class="astro-IWAHHG4Z"></path>
+            </svg>
+          </span>
+          提示
+        </p>
+        <section class="astro-IWAHHG4Z">
+          <p>
+            如果您的项目属于第二个“应用”阵营，Astro可能不是您项目的正确选择…**没关系！**查看<a
+              href="https://nextjs.org/">Next.js</a
+            >了解一个以应用程序为重点的绝佳Web框架替代方案。
+          </p>
+        </section>
+      </aside>
+
+      <div tabIndex="-1" class="heading-wrapper level-h2">
+        <h2 id="服务器优先">服务器优先</h2><a
+          class="anchor-link"
+          href="#服务器优先"
+          ><span aria-hidden="true" class="anchor-icon"
+            ><svg
+              width="16"
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xlmns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                fill="currentcolor"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+              >
+              </path>
+            </svg></span
+          ><span is:raw="true" class="sr-only">Section titled 服务器优先</span
+          ></a
+        >
+      </div>
+      <p>
+        <strong>Astro 尽可能利用服务器渲染而不是客户端渲染。</strong> 这与传统服务器端框架（PHP、WordPress、Laravel、Ruby
+        on Rails等）使用的方法相同，您不需要学习第二种服务端语言。 Astro 仍然使用
+        HTML、CSS和JavaScript(或TypeScript)。
+      </p>
+      <p>
+        这种方法与其他现代 JavaScript Web框架 形成鲜明对比，如
+        Next.JS、SvelteKit、Nuxt、Remix
+        等。这些框架需要整个网站的客户端和服务器端渲染，以解决性能问题，这种方法被称为<strong
+          >单页应用程序(SPA)，</strong
+        > 与 Astro 的<strong>多页应用程序（MPA）</strong> 方式形成鲜明对比。
+      </p>
+      <p>
+        SPA模式有它的优势。然而，这些都是以牺牲额外的复杂性和性能权衡为代价，这些权衡会损坏页面性能——包括<a
+          href="https://web.dev/interactive/">可交互时间(TTI)</a
+        >
+        等关键指标——这对于以内容为中心的网站没有多大意义，因为这些网站的首次加载性能至关重要。
+      </p>
+      <p>
+        📚 <a href="/zh-cn/concepts/mpa-vs-spa/"
+          >进一步了解 <strong>Astro MPA</strong> 架构的独特之处</a
+        >
+      </p>
+      <div tabIndex="-1" class="heading-wrapper level-h2">
+        <h2 id="默认快速">默认快速</h2><a class="anchor-link" href="#默认快速"
+          ><span aria-hidden="true" class="anchor-icon"
+            ><svg
+              width="16"
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xlmns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                fill="currentcolor"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+              >
+              </path>
+            </svg></span
+          ><span is:raw="true" class="sr-only">Section titled 默认快速</span></a
+        >
+      </div>
+      <p>
+        良好的性能很重要，对于以内容为中心的网站尤其至关重要。事实证明，糟糕的表现会让您失去参与度、转化率和金钱。列如：
+      </p>
+      <ul>
+        <li>
+          每快 100ms → 转化率增加 1% (<a
+            href="https://web.dev/why-speed-matters/">Mobify</a
+          >, 收入 +$380,000/年)
+        </li>
+        <li>
+          每快 50% → 销售额增加 12% (<a
+            href="https://www.digitalcommerce360.com/2010/08/19/web-accelerator-revs-conversion-and-sales-autoanything/"
+            >AutoAnything</a
+          >)
+        </li>
+        <li>
+          每快 20% → 转换率增加 10% (<a
+            href="https://www.thinkwithgoogle.com/intl/en-gb/marketing-strategies/app-and-mobile/furniture-village-and-greenlight-slash-page-load-times-boosting-user-experience/"
+            >Furniture Village</a
+          >)
+        </li>
+        <li>
+          每快 40% → 注册率增加 15% (<a
+            href="https://medium.com/pinterest-engineering/driving-user-growth-with-performance-improvements-cfc50dafadd7"
+            >Pinterest</a
+          >)
+        </li>
+        <li>
+          转换速度提高 850ms → 转化率增加 7% (<a
+            href="https://web.dev/why-speed-matters/">COOK</a
+          >)
+        </li>
+        <li>
+          每慢1秒 → 减少 10% 的用户 (<a
+            href="https://www.creativebloq.com/features/how-the-bbc-builds-websites-that-scale"
+            >BBC</a
+          >)
+        </li>
+      </ul>
+      <p>
+        在许多 Web框架
+        中，在开发过程中很容易构建一个看起来很棒的网站，但是在部署后加载速度会非常慢。JavaScript
+        通常是罪魁祸首，因为用户的手机和低功耗设备很少能与开发人员的电脑速度相匹配。
+      </p>
+      <p>
+        Astro
+        的魔力在于它如何将上述两个值（内容焦点于服务器优先的MPA架构）相结合，以做出权衡并提供其他框架无法实现的功能。结果是每个网站都有开箱即用令人惊叹的Web性能。我们的目标：<strong
+          >使用 Astro 构建几乎不可能缓慢的网站。</strong
+        >
+      </p>
+      <p>
+        与使用最受欢迎的 React Web框架 构建相同的网站进行比较，Astro 网站的<a
+          href="https://twitter.com/t3dotgg/status/1437195415439360003"
+          >加载速度快40%，JavaScript减少90%</a
+        >
+        。请对我们的结论半信半疑：观看 Astro 的现场直播 让 Ryan Carniato(Solid.js和Marko的创造者)
+        <a href="https://youtu.be/2ZEMb_H-LYE?t=8163">无言以对</a>.
+      </p>
+      <div tabIndex="-1" class="heading-wrapper level-h2">
+        <h2 id="易于使用">易于使用</h2><a class="anchor-link" href="#易于使用"
+          ><span aria-hidden="true" class="anchor-icon"
+            ><svg
+              width="16"
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xlmns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                fill="currentcolor"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+              >
+              </path>
+            </svg></span
+          ><span is:raw="true" class="sr-only">Section titled 易于使用</span></a
+        >
+      </div>
+      <p>
+        <strong>Astro的目标是让每位Web开发人员都可以访问。</strong> Astro 被设计成熟悉和平易近人的感觉，无论技能水平或过去的Web开发经验如何。
+      </p>
+      <p>
+        我们首先确保您可以使用您已经知道的任何喜欢的 UI 组件语言。在 Astro
+        中创建新的 UI 组件时都支持React、Preact、Svelte、Vue、Solid、Lit
+        和其他一些组件。
+      </p>
+      <p>
+        我们为了 Astro 也能有一个很好的内置组件语言，我们创建了自己 <code
+          >.astro</code
+        > UI语言。它很大程度上深受 HTML 的影响：任何有效的 HTML 部分都已经是有效的
+        Astro组件，它还结合了我们从其他组件中借用的一些功能，如：React的JSX表达式和
+        CSS范围（默认为Svelte和Vue）。
+      </p>
+      <p>
+        Astro 的设计比其他UI框架和语言更简单，其中一个重要原因是 Astro
+        被设计为在服务器上渲染而不是浏览器，这意味着您无需担心：React
+        Hooks、stale
+        closures(React)、refs(Vue)、observables(Svelte)、atoms、selectors、reactions
+        or derivations。服务器上没有反应，因此这些复杂性都消失了。
+      </p>
+      <p>
+        我们最喜欢的谚语之一是：<strong>选择加入复杂性。</strong> 我们设计 Astro
+        是为了尽可能多地从开发人员体验中消除“所需的复杂性”，尤其是您首次加入时。您可以在
+        Astro中使用 HTML和CSS构建“Hello World”示例网站。然后当您需要构建更强大的功能时，您可以随时获得新功能和API。
+      </p>
+      <div tabIndex="-1" class="heading-wrapper level-h2">
+        <h2 id="功能齐全且灵活">功能齐全且灵活</h2><a
+          class="anchor-link"
+          href="#功能齐全且灵活"
+          ><span aria-hidden="true" class="anchor-icon"
+            ><svg
+              width="16"
+              height="16"
+              version="1.1"
+              viewBox="0 0 16 16"
+              xlmns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                fill="currentcolor"
+                d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"
+              >
+              </path>
+            </svg></span
+          ><span is:raw="true" class="sr-only"
+            >Section titled 功能齐全且灵活</span
+          ></a
+        >
+      </div>
+      <p>
+        <strong
+          >Astro 是集多功能于一体的Web框架，提供了构建网站所需的一切</strong
+        > Astro 包括组件语法、基于文件的路由、资产处理、构建处理、捆绑、优化、数据获取等。您可以在不超过
+        Astro核心功能集 的情况下构建出色的网站。
+      </p>
+      <p>
+        如果您需要更多的控制，你可以通过 <a
+          href="https://www.npmjs.com/package/@astrojs/react">React</a
+        >, <a href="https://www.npmjs.com/package/@astrojs/svelte">Svelte</a>, <a
+          href="https://www.npmjs.com/package/@astrojs/vue">Vue</a
+        >, <a href="https://www.npmjs.com/package/@astrojs/tailwind"
+          >Tailwind CSS</a
+        >, <a href="https://www.npmjs.com/package/@astrojs/mdx">MDX</a>, <a
+          href="https://www.npmjs.com/package/@astrojs/images"
+          >image optimizations</a
+        >等<a href="https://astro.build/integrations/">100多个集成</a> 扩展 Astro
+        只需要一个命令 <a href="https://astro.build/integrations/"
+          >即可连接您喜欢的CMS</a
+        > 或 <a href="/zh-cn/guides/deploy/">部署到您喜欢的服务器</a>
+      </p>
+      <p>
+        Astro 与 UI 无关，这意味着您可以自带UI框架（BYOF）。React、Preact、Solid
+        、Svelte、Vue和
+        Lit都在Astro中得到官方支持。您甚至可以在同一页面上混合和匹配不同的框架，使未来的迁移更容易，并防止项目锁定到单个框架。
+      </p>
+    </section>
+  </article>
+</BasicLayout>

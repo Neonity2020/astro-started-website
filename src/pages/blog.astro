@@ -1,0 +1,44 @@
+---
+import BasicLayout from "../layouts/BasicLayout.astro";
+
+import { BASE } from "../config";
+const posts = await Astro.glob("./blog/*.md");
+---
+
+<BasicLayout
+  mainContent={{
+    isNarrow: true,
+    mainTitle: "Astro博客",
+    mainDesption: "获取所有来自宇宙的最新消息。",
+  }}
+  title="博客"
+>
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ul class="md:mt-8 mb-8">
+      {
+        posts.map(({ frontmatter, url }) => (
+          <li class="py-12 border-t first:border-t-0 border-gray-200 grid sm:grid-cols-3 gap-2">
+            <div class="w-56 text-gray-500">
+              <p>
+                <time datetime="Thu, 08 Dec 2022 00:00:00 GMT">
+                  {frontmatter.pubTime}
+                </time>
+              </p>
+            </div>
+            <div class="sm:col-span-2 relative">
+              <h2 class="text-2xl text-gray-900 font-bold">
+                <a
+                  href={url}
+                  class="after:absolute after:-inset-2 hover:underline"
+                >
+                  {frontmatter.title}
+                </a>
+              </h2>
+              <div class="mt-4 text-gray-900">{frontmatter.description}</div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BasicLayout>

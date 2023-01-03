@@ -1,0 +1,45 @@
+---
+import BasicLayout from "./BasicLayout.astro";
+import { BASE } from "../config";
+const {
+  content: { title, pubTime, author },
+} = Astro.props;
+---
+
+<BasicLayout title="详情">
+  <article
+    class="prose lg:prose-xl max-w-screen-md px-4 py-12 sm:py-24 mx-auto astro-4MNHRGTJ pt-24 pb-8 overflow-hidden relative"
+  >
+    <a
+      href={`${BASE}blog`}
+      class="text-balck bg-sky-600 hover: opacity-90 hover:cursor-pointer px-4 py-1 text-white rounded-md"
+      >返回</a
+    >
+    <div class="cover-image astro-4MNHRGTJ">
+      <img
+        src="../assets/cover_136pYY.jpg"
+        loading="lazy"
+        decoding="async"
+        alt=""
+        class="astro-GPNI5TPD"
+      />
+    </div>
+    <h1
+      class="my-6 text-4xl sm:text-5xl text-neutral-900 font-bold text-center astro-4MNHRGTJ"
+    >
+      {title}
+    </h1>
+    <div class="my-4 space-y-2 text-neutral-500 text-lg astro-4MNHRGTJ">
+      <p
+        class="flex gap-2 items-center justify-center flex-wrap astro-4MNHRGTJ"
+      >
+        <time datetime="August 9, 2022" class="astro-4MNHRGTJ">
+          {pubTime}
+        </time>
+        <span class="astro-4MNHRGTJ">by</span>{author}
+      </p>
+    </div>
+    <hr class="my-4 astro-4MNHRGTJ" />
+    <slot />
+  </article>
+</BasicLayout>

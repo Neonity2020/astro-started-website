@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <style>
+        #menu {
+            display: none !important;
+        }
+
+        #menu.open {
+            display: flex !important;
+        }
+
+        @media (min-width: 640px) {
+            #menu {
+                display: flex !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="min-h-screen flex flex-col overflow-x-hidden">
+        <header id="navheader" class="fixed top-0 left-0 right-0 z-20 ">
+            <div class="bg-neutral-900 text-neutral-400 py-4 ">
+                <nav class="relative max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 "
+                    aria-label="Global">
+                    <div class="flex justify-between flex-col sm:flex-row items-center flex-1 gap-y-6 ">
+                        <div class="flex items-center justify-between w-full md:w-auto ">
+                            <a href="./index.html" class="flex gap-x-1 text-neutral-50 font-semibold text-xl "
+                                id="navlogo">
+                                <svg fill="none" viewBox="0 0 2712 894" height="32" aria-hidden="true" class="-mb-1 ">
+                                    <path fill="#fff" fill-rule="evenodd"
+                                        d="M445.432 22.983c7.29 9.05 11.007 21.26 18.441 45.682L626.28 602.176a675.845 675.845 0 0 0-194.166-65.737L326.37 179.099a13.762 13.762 0 0 0-26.407.041L195.5 536.259A675.814 675.814 0 0 0 .459 602.095L163.664 68.541c7.457-24.38 11.186-36.57 18.475-45.602A60.008 60.008 0 0 1 206.453 4.95C217.223.622 229.97.622 255.465.622h116.569c25.528 0 38.292 0 49.072 4.338a59.994 59.994 0 0 1 24.326 18.023Z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#FF5D01" fill-rule="evenodd"
+                                        d="M464.866 627.566c-26.773 22.894-80.211 38.507-141.766 38.507-75.549 0-138.872-23.52-155.675-55.152-6.007 18.129-7.354 38.877-7.354 52.131 0 0-3.957 65.082 41.309 110.349 0-23.505 19.054-42.559 42.558-42.559 40.287 0 40.242 35.148 40.205 63.664l-.002 2.545c0 43.282 26.453 80.385 64.074 96.024-5.619-11.557-8.771-24.535-8.771-38.25 0-41.28 24.234-56.65 52.4-74.514 22.41-14.213 47.31-30.004 64.47-61.682 8.954-16.528 14.038-35.459 14.038-55.577 0-12.372-1.923-24.295-5.486-35.486Z"
+                                        clip-rule="evenodd" />
+                                    <path fill="#fff"
+                                        d="M999.147 593.833c67.933 0 118.883-24.168 139.783-65.317 0 19.595 1.3 39.844 4.57 55.52h111.69c-5.22-22.863-7.84-54.216-7.84-95.365v-100.59c0-95.364-56.17-140.433-180.93-140.433-109.076 0-182.232 45.069-190.724 118.879h116.266c3.919-32.006 30.698-49.642 74.458-49.642 43.11 0 67.28 17.636 67.28 54.215v9.796l-118.22 10.451c-57.483 5.88-90.142 15.676-113.004 31.353-24.167 16.328-36.578 41.151-36.578 71.849 0 61.399 50.949 99.284 133.249 99.284Zm43.113-67.931c-37.89 0-60.749-15.022-60.749-39.19 0-24.82 18.939-37.885 66.629-43.763l87.52-9.144V453.4c0 43.763-37.88 72.502-93.4 72.502ZM1490.77 593.833c113.65 0 171.79-42.456 171.79-111.04 0-56.827-32.66-88.18-111.69-98.631l-98.64-11.103c-28.08-3.921-39.84-11.106-39.84-26.782 0-18.941 18.94-27.433 62.05-27.433 59.44 0 100.59 13.717 133.91 40.498l52.9-52.908c-36.58-37.884-99.93-58.786-178.32-58.786-110.38 0-171.78 39.19-171.78 105.161 0 57.48 37.88 89.486 116.26 99.936l88.84 10.451c35.27 4.573 45.72 11.106 45.72 28.087 0 19.597-19.6 30.048-65.32 30.048-67.93 0-113.65-18.29-144.35-52.255l-60.1 49.641c39.85 49.643 107.78 75.116 198.57 75.116ZM1754.78 331.255v137.821c0 80.994 45.72 122.145 143.7 122.145 30.05 0 53.56-3.266 75.77-9.798v-84.915c-11.76 2.614-26.13 5.226-45.07 5.226-41.15 0-61.4-18.288-61.4-56.826V331.255h107.12v-73.81h-107.12V137.914l-113 41.803v77.728h-73.16v73.81h73.16ZM2137.13 257.445h-103.2v326.591h113V461.892c0-35.274 7.84-67.279 29.4-87.528 16.98-15.677 41.15-24.166 75.11-24.166 12.41 0 22.21 1.304 33.31 2.611V250.26c-7.18-1.306-12.41-1.306-21.55-1.306-64.67 0-108.43 37.231-126.07 97.978v-89.487ZM2508.05 593.833c119.54 0 203.8-63.358 203.8-173.745 0-109.735-84.26-172.44-203.8-172.44-120.18 0-204.44 62.705-204.44 172.44 0 110.387 84.26 173.745 204.44 173.745Zm0-75.116c-54.86 0-89.48-35.271-89.48-98.629 0-63.36 34.62-97.325 89.48-97.325 54.22 0 88.84 33.965 88.84 97.325 0 63.358-34.62 98.629-88.84 98.629Z" />
+                                </svg>
+                                <span class="sr-only ">Astro</span>
+                            </a>
+                            <div class="-mr-2 sm:-mr-6 flex items-center sm:hidden ">
+                                <button type="button" id="menubtn"
+                                    class="rounded-md p-2 inline-flex items-center justify-center hover:bg-neutral-600 hover:text-neutral-100 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-neutral-50 "
+                                    aria-expanded="false">
+                                    <span class="sr-only ">Open main menu</span>
+                                    <svg viewBox="0 0 24 24" aria-hidden="true" class="" width="24" height="24">
+                                        <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="menu"
+                            class="flex flex-col sm:flex-row gap-x-8 gap-y-4 sm:ml-10 text-center sm:text-left sm:pb-0 ">
+                            <a href="../about.html" class="text-base text-neutral-50 hover:text-neutral-300 ">
+                                关于
+                            </a><a href="../blog.html" class="text-base text-neutral-50 hover:text-neutral-300 ">
+                                博客
+                            </a>
+                        </div>
+
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <main class="flex-1 astro-4MNHRGTJ">
+            <article class="max-w-screen-md px-4 py-12 sm:py-24 mx-auto astro-4MNHRGTJ">
+
+                <div class="cover-image astro-4MNHRGTJ">
+
+                    <img src="../assets/blog-hero_4lnUH.jpg" loading="lazy" decoding="async" alt=""
+                        class="astro-GPNI5TPD">
+                </div>
+                <h1 class="my-6 text-4xl sm:text-5xl text-neutral-900 font-bold text-center astro-4MNHRGTJ">
+                    Themes Catalog Updates
+                </h1>
+                <div class="my-4 space-y-2 text-neutral-500 text-lg astro-4MNHRGTJ">
+                    <p class="flex gap-2 items-center justify-center flex-wrap astro-4MNHRGTJ">
+                        <time datetime="December 8, 2022" class="astro-4MNHRGTJ">
+                            December 8, 2022
+                        </time>
+                        <span class="astro-4MNHRGTJ">by</span>
+                        <span class="inline-flex space-x-1 astro-4MNHRGTJ">
+                            <img class="my-0 w-6 h-6 rounded-full" alt="" aria-hidden="true" width="48" height="48"
+                                src="../assets/tony.jpg" loading="lazy" decoding="async">
+                            <span class="astro-4MNHRGTJ">Tony Sullivan</span>
+                        </span>
+                    </p>
+                </div>
+                <hr class="my-4 astro-4MNHRGTJ">
+                <div class="prose text-lg astro-4MNHRGTJ">
+                    <p>We <a href="https://astro.build/blog/themes-and-integrations/">launched Astro Themes</a> earlier
+                        this year to highlight the growing list of Astro themes and starter templates being developed by
+                        our amazing community. Astro’s <a href="https://astro.build/themes/">Themes Catalog</a> makes it
+                        easy to browse a collection of themes for your next site and get started with a full-featured
+                        project from day one.</p>
+                    <p><strong>Today, we’re excited to announce improvements to the themes catalog, support for paid
+                            themes, and an improved <a href="https://astro.build/themes/submit">theme submission
+                                process</a>.</strong></p>
+                    <h2 id="theme-detail-pages">Theme Detail Pages</h2>
+                    <p>The initial release of our themes catalog focused on creating a launchpad for Astro themes,
+                        giving a quick overview of themes with a preview image and short description. As the list of
+                        themes grew that lead to an obvious question, what if you want to know more about a specific
+                        theme?</p>
+                    <p>Theme authors can now share more details about the theme they worked so hard to design, develop,
+                        and test. Multiple images can be included to show off different page templates, dark mode
+                        support, and included components. Badges add a quick reference to what tools and frameworks were
+                        used to build theme. Most importantly, a full description section means theme authors can share
+                        details that would never fit in a card layout.</p>
+                    <aside class="font-sans rounded border px-6 py-4 bg-slate-50">
+                        <div class="mt-3 mb-1 leading-normal text-lg">
+                            <h3 class="mt-0">Submit your theme</h3>
+                            <p>Already have a theme in our catalog? Check out our new <a
+                                    href="https://astro.build/themes/submit/">submission form</a> to update your theme’s
+                                details!</p>
+                        </div>
+                    </aside>
+                    <h2 id="paid-themes">Paid Themes</h2>
+                    <p>Building and maintaining a theme is a massive undertaking — from design and development to
+                        testing and user support, the work really piles up fast.</p>
+                    <p>The catalog now supports Paid themes, allowing theme authors to include a link to where the theme
+                        can be purchased. Whether a theme author uses <a href="https://gumroad.com/">Gumroad</a> or
+                        sells on their own site, our catalog makes it easier to share your theme and have Astro users
+                        discover it.</p>
+                    <h2 id="new-submission-form">New Submission Form</h2>
+                    <p>Submitting your theme to the catalog just got easier!</p>
+                    <p>Gone are the days of filling out GitHub issue templates. The new submission form makes it simple
+                        to upload multiple preview images, select the tools used in your theme, and even includes a rich
+                        text editor for writing the full description of your theme.</p>
+                    <div style="
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;"><a href="https://astro.build/themes"
+                            class="w-full flex items-center justify-center px-4 py-3 border border-transparent rounded-md text-base font-medium no-underline md:text-lg text-neutral-50 bg-primary-600 hover:bg-primary-700">
+                            Visit the Themes Catalog
+                        </a><span style="font-size: 1rem;margin: 1rem;">
+                            <p>Already built something cool with Astro?
+                                <a href="https://astro.build/themes/submit">Tell us about it here!</a>
+                            </p>
+                        </span></div>
+                </div>
+            </article>
+        </main>
+
+        <footer class="bg-neutral-900">
+            <div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
+                <nav class="-mx-5 -my-2 flex flex-wrap justify-center text-white" aria-label="Footer">
+                    copyright balabala....
+                </nav>
+            </div>
+        </footer>
+        <script>
+            (function () {
+                const menubtn = document.getElementById('menubtn')
+                const menu = document.getElementById('menu')
+                menubtn.addEventListener('click', () => menu.classList.toggle('open'))
+            })()
+        </script>
+</body>
+
+</html>
